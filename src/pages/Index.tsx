@@ -1,19 +1,19 @@
 import React from 'react';
-// import HeroSection from '@/components/HeroSection';
+import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import SkillsSection from '@/components/SkillsSection';
 import ProjectsSection from '@/components/ProjectsSection';
-// import ContactSection from '@/components/ContactSection'; 
+import ContactSection from '@/components/ContactSection'; 
 import Navigation from '@/components/Navigation';
 export const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-     {/* <HeroSection /> */}
+      <HeroSection />
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
-      {/* <ContactSection />  */}
+      <ContactSection /> 
     </div>
   );
 };

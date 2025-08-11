@@ -2,14 +2,16 @@ import React, { useRef } from "react";
 import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Modal from "@/components/ui/Modal";
-// import Resume from "@/components/Resume";
-
+import Resume from "@/components/Resume";
+import { useReactToPrint } from "react-to-print";
 
 const HeroSection = () => {
   const [resumeOpen, setResumeOpen] = React.useState(false);
   const resumeRef = useRef<HTMLDivElement>(null);
-
-//   });
+  const handlePrint = useReactToPrint({
+    content: () => resumeRef.current,
+    documentTitle: "Caleb Munene Resume",
+  });
 
   const scrollToAbout = () => {
     document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
@@ -44,7 +46,7 @@ const HeroSection = () => {
                   Hello, I'm
                 </p>
                 <h1 className="text-4xl md:text-6xl font-bold mb-4 gradient-text leading-tight">
-                  Fredrick Nyang'au
+                 Caleb Munene
                 </h1>
               </div>
 
@@ -53,7 +55,7 @@ const HeroSection = () => {
                 style={{ animationDelay: "0.2s" }}
               >
                 <div className="text-2xl md:text-3xl text-muted-foreground mb-8 font-light">
-                  <span className="block">FullStack Developer</span>
+                  <span className="block">FullStack Software Developer</span>
                   <span className="block text-xl md:text-2xl mt-2 text-primary">
                     & Freelancer
                   </span>
@@ -64,15 +66,14 @@ const HeroSection = () => {
                 className="text-lg text-muted-foreground max-w-xl mb-12 leading-relaxed animate-fade-in-up"
                 style={{ animationDelay: "0.4s" }}
               >
-                I craft exceptional digital experiences through the perfect
-                blend of
+                 who blends creativity 
                 <span className="text-primary font-medium">
                   {" "}
-                  innovative design
+                  creativity
                 </span>{" "}
                 and
-                <span className="text-primary font-medium"> clean code</span>.
-                Let's build something extraordinary together.
+                <span className="text-primary font-medium"> clean code</span> 
+               to bring ideas to life. From concept to deployment, I build solutions that are functional, scalable, and a joy to use.Every project is a partnership, together, we can transform your vision into something extraordinary.
               </p>
 
               <div
@@ -106,14 +107,14 @@ const HeroSection = () => {
               >
                 {[
                   {
-                    src: "/github.png",
-                    href: "https://github.com/calebmunenek",
+                    src: "/github.jpg",
+                    href: "https://github.com/CalebMuneneK",
                     label: "GitHub",
                     color: "hover:bg-gray-900 hover:text-white",
                   },
                   {
-                    src: "/linkedin.png",
-                    href: "https://www.linkedin.com/in/caleb-munene-769734249",
+                    src: "/linkedin.jpg",
+                    href: "https://linkedin.com/in/caleb-munene-769734249",
                     label: "LinkedIn",
                     color: "hover:bg-blue-600 hover:text-white",
                   },
@@ -158,7 +159,7 @@ const HeroSection = () => {
                 <div className="w-72 h-72 md:w-88 md:h-88 rounded-full bg-gradient-to-br from-primary/20 to-purple-500/20 flex items-center justify-center">
                   <img
                     src="/profile.jpg"
-                    alt="Fredrick Nyang'au"
+                    alt="Caleb Munene"
                     className="w-full h-full object-cover rounded-full shadow-lg transition-transform duration-300 group-hover:scale-105"
                     style={{ boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)" }}
                     loading="lazy"
@@ -182,9 +183,9 @@ const HeroSection = () => {
       </div>
 
       <Modal isOpen={resumeOpen} onClose={() => setResumeOpen(false)}>
-        {/* <div ref={resumeRef} className="print:bg-white">
+        <div ref={resumeRef} className="print:bg-white">
           <Resume onPrint={handlePrint} ref={resumeRef} />
-        </div> */}
+        </div>
         <div className="flex justify-end mt-4 gap-2 print:hidden">
           <Button variant="secondary" onClick={() => setResumeOpen(false)}>
             Close

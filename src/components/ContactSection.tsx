@@ -316,8 +316,9 @@ const ContactSection = () => {
         <div className="text-center pt-16 border-t border-border/50">
           <div className="glass-effect rounded-2xl p-8 border">
             <p className="text-muted-foreground mb-4">
-              © {new Date().getFullYear()} Fredrick Nyang'au. Crafted with
-              passion using React, TypeScript & Tailwind CSS.
+              © {new Date().getFullYear()} "Hello World" was just the beginning.  
+Caleb Munene — Writing the future, one commit at a time.
+
             </p>
           </div>
         </div>

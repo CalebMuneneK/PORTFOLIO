@@ -88,31 +88,31 @@
 }
 
 @layer base {
-  /* * {
+  * {
     @apply border-border;
-  } */
+  }
 
   body {
-    /* @apply bg-background text-foreground; */
+    @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
 @layer utilities {
   .gradient-text {
-    /* @apply bg-gradient-to-r from-primary via-purple-500 to-pink-500 bg-clip-text text-transparent; */
+    @apply bg-gradient-to-r from-primary via-purple-500 to-pink-500 bg-clip-text text-transparent;
   }
   
   .glass-effect {
-    /* @apply bg-background/80 backdrop-blur-xl border border-border/50; */
+    @apply bg-background/80 backdrop-blur-xl border border-border/50;
   }
   
   .hover-lift {
-    /* @apply transition-all duration-300 hover:scale-105 hover:shadow-2xl; */
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-2xl;
   }
   
   .section-padding {
-    /* @apply py-24 lg:py-32; */
+    @apply py-24 lg:py-32;
   }
 }
 
