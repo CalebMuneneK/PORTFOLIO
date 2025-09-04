@@ -1,3 +1,5 @@
+
+import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Code2, Coffee, Database, Workflow, Users, Wrench } from 'lucide-react';
 
