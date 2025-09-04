@@ -16,10 +16,10 @@ const Resume = forwardRef<HTMLDivElement, ResumeProps>(
     // Forward internal ref to parent
     useImperativeHandle(ref, () => resumeRef.current as HTMLDivElement);
 
-    const handlePrint = useReactToPrint({
-      content: () => resumeRef.current,
-      documentTitle: "Caleb_Munene_Resume",
-    });
+    // const handlePrint = useReactToPrint({
+    //   content: () => resumeRef.current,
+    //   documentTitle: "Caleb_Munene_Resume",
+    // });
 
     const exportToWord = () => {
       const target = resumeRef.current;
@@ -37,7 +37,7 @@ const Resume = forwardRef<HTMLDivElement, ResumeProps>(
         {!hideExport && (
           <div className="flex justify-end mb-4 gap-2 print:hidden">
             <Button
-              onClick={onPrint || handlePrint}
+              // onClick={onPrint || handlePrint}
               className="bg-primary text-white hover:bg-primary/90 px-6 py-2 rounded-lg shadow-md transition-all"
             >
               Print / Save as PDF
