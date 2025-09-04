@@ -66,14 +66,14 @@ const HeroSection = () => {
                 className="text-lg text-muted-foreground max-w-xl mb-12 leading-relaxed animate-fade-in-up"
                 style={{ animationDelay: "0.4s" }}
               >
-                 who blends creativity 
+                 who blends 
                 <span className="text-primary font-medium">
                   {" "}
                   creativity
                 </span>{" "}
                 and
-                <span className="text-primary font-medium"> clean code</span> 
-               to bring ideas to life. From concept to deployment, I build solutions that are functional, scalable, and a joy to use.Every project is a partnership, together, we can transform your vision into something extraordinary.
+                <span className="text-primary font-medium"> clean code </span> 
+                to bring ideas to life. From concept to deployment, I build solutions that are functional, scalable, and a joy to use.Every project is a partnership, together, we can transform your vision into something extraordinary.
               </p>
 
               <div

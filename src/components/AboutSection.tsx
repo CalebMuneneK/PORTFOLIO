@@ -1,27 +1,42 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Code2, Palette, Zap, Coffee } from 'lucide-react';
+import { Code2, Coffee, Database, Workflow, Users, Wrench } from 'lucide-react';
 
 
 const AboutSection = () => {
   const highlights = [
-    {
-      icon: Code2,
-      title: 'Clean Architecture',
-      description: 'Building scalable solutions with maintainable, well-documented code that stands the test of time'
-    },
-    {
-      icon: Palette,
-      title: 'Design Excellence',
-      description: 'Creating beautiful, intuitive interfaces that delight users and drive engagement'
-    },
-    {
-      icon: Zap,
-      title: 'Performance First',
-      description: 'Optimizing every interaction for speed, accessibility, and seamless user experiences'
-    }
-  ];
+  {
+    icon: Code2,
+    title: "Full-Stack Development",
+    description:
+      "Building robust applications with Java Spring Boot, Angular, and Flutter, ensuring seamless integration between frontend and backend.",
+  },
+  {
+    icon: Database,
+    title: "Database Management",
+    description:
+      "Designing and optimizing MySQL, PostgreSQL, Firebase, and MongoDB databases for efficiency, scalability, and reliability.",
+  },
+  {
+    icon: Workflow,
+    title: "API Integration",
+    description:
+      "Implementing and testing RESTful APIs with Postman to enable smooth communication between systems and services.",
+  },
+  {
+    icon: Users,
+    title: "Collaboration & Leadership",
+    description:
+      "Thriving in team environments with strong communication, adaptability, and problem-solving to deliver impactful results.",
+  },
+  {
+    icon: Wrench,
+    title: "Troubleshooting & Optimization",
+    description:
+      "Identifying and resolving technical issues quickly while improving application performance and adhering to best practices.",
+  },
+];
 
   const stats = [
     { number: '4+', label: 'Years Experience' },
@@ -52,30 +67,34 @@ const AboutSection = () => {
           <div className="space-y-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-                I'm a passionate full-stack developer who believes that
+               I’m a dedicated software developer with a strong foundation in 
                 <span className="text-primary font-semibold">
                   {" "}
-                  great code tells a story
+                 both web and mobile application development.
                 </span>
-                . With over 4 years of crafting digital experiences, I've
-                learned that the best solutions come from understanding both the
-                technical challenges and human needs.
+               My journey into technology began at Kabarak University, where I explored programming, database management, and full-stack development. 
+               What started as an academic pursuit quickly transformed into a passion
+               <span className="text-primary font-semibold">
+                  {" "}
+                 creating meaningful digital solutions
+                </span>.
+              </p>
+              
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+             From building responsive interfaces with Angular and Flutter to designing efficient backends with Java Spring Boot and MySQL,
+             I’ve learned that the true power of technology lies in solving real-world problems while keeping user experience at the center. 
+             My professional experience at Techsavanna Technologies has sharpened my ability to design scalable systems, implement RESTful APIs, and troubleshoot complex issues.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                My journey began in 2021 at Kabarak University in Nakuru, Kenya,
-                where I was first introduced to the world of technology through
-                foundational computer skills and MS Office applications. From
-                these humble beginnings, I took my first steps into programming
-                by crafting simple "Hello World" pages using HTML, CSS, and
-                JavaScript. That spark of curiosity quickly grew into a deep
-                passion for building intuitive and impactful digital
-                experiences. Over the years, I've developed a strong command of
-                modern web technologies and frameworks, with a focus on creating
-                seamless, performant, and user-centric applications that not
-                only function flawlessly but also inspire and engage users at
-                every touchpoint.
+                I believe
+                <span className="text-primary font-semibold">
+                  {" "}
+                 great software is more than just clean code; it’s about delivering solutions that are reliable, user-friendly, and impactful
+                </span>.
+                I’m always eager to embrace new challenges, adapt to evolving technologies, and grow as part of a collaborative team.
               </p>
+
             </div>
 
             <div className="grid grid-cols-2 gap-6">
@@ -93,11 +112,21 @@ const AboutSection = () => {
 
             <div className="flex flex-wrap gap-3">
               {[
-                "React",
-                "TypeScript",
-                "Node.js",
-                "Django",
-                "TailwindCSS",
+                      "Java",
+      "Dart (Flutter)",
+      "Angular",
+      "React",
+      "HTML5",
+      "CSS3",
+      "MySQL",
+      "Git",
+      "GitHub",
+      "RESTful APIs",
+      "Postman",
+      "Adobe Photoshop",
+      "Illustrator",
+      "Debugging & Troubleshooting"
+
               ].map((tech) => (
                 <span
                   key={tech}

@@ -106,8 +106,8 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: "Phone",
-      value: "+254 746730585",
-      href: "tel:+254746730585",
+      value: "+254 740630349",
+      href: "tel:+254740630349",
       description: "Mon-Fri 9AM-6PM EAT",
     },
     {
