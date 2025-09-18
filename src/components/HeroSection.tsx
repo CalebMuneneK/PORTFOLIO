@@ -8,8 +8,9 @@ import { useReactToPrint } from "react-to-print";
 const HeroSection = () => {
   const [resumeOpen, setResumeOpen] = React.useState(false);
   const resumeRef = useRef<HTMLDivElement>(null);
+  
   const handlePrint = useReactToPrint({
-    content: () => resumeRef.current,
+    contentRef: resumeRef,
     documentTitle: "Caleb Munene Resume",
   });
 
@@ -184,7 +185,7 @@ const HeroSection = () => {
 
       <Modal isOpen={resumeOpen} onClose={() => setResumeOpen(false)}>
         <div ref={resumeRef} className="print:bg-white">
-          <Resume onPrint={handlePrint} ref={resumeRef} />
+          <Resume onPrint={handlePrint} />
         </div>
         <div className="flex justify-end mt-4 gap-2 print:hidden">
           <Button variant="secondary" onClick={() => setResumeOpen(false)}>

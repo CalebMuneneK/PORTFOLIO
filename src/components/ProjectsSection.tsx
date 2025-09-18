@@ -177,7 +177,7 @@ const ProjectsSection = () => {
                     className="hover-lift"
                   >
                     <a
-                      href={project.githubUrl}
+                      // href={project.githubUrl}
                       className="flex items-center gap-2"
                     >
                       <Github size={16} />
@@ -190,7 +190,7 @@ const ProjectsSection = () => {
                     className="bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-600/90"
                   >
                     <a
-                      href={project.liveUrl}
+                      // href={project.liveUrl}
                       className="flex items-center gap-2"
                     >
                       <ExternalLink size={16} />
@@ -243,7 +243,7 @@ const ProjectsSection = () => {
                     //   </Badge>
                     ))}
                   </div> */}
-                  <div className="flex gap-3 pt-2">
+                  {/* <div className="flex gap-3 pt-2">
                     <Button variant="outline" size="sm" asChild>
                       <a href={project.githubUrl}>
                         <Github size={14} />
@@ -254,7 +254,7 @@ const ProjectsSection = () => {
                         <ExternalLink size={14} />
                       </a>
                     </Button>
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
             ))}
